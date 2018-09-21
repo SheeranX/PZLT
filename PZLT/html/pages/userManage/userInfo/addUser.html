@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../../../../vendors/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../../vendors/bootstrap-select/bootstrap-select.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../../styles/pages/addUser.css" />
+		<title>添加用户</title>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="addUser-form">
+					<form action="" class="form-horizontal">
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="unit">主管单位</label>
+							<div class="col-sm-6">
+								<select class="selectpicker" id="unit">
+									<option>Mustard</option>
+									<option>Ketchup</option>
+									<option>Barbecue</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="workPlace">工作单位</label>
+							<div class="col-sm-6">
+								<select class="selectpicker" id="workPlace">
+									<option>Mustard</option>
+									<option>Ketchup</option>
+									<option>Barbecue</option>
+								</select>
+							</div>
+
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="userName">用户姓名</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="userName" autocomplete="off" placeholder="用户姓名">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="loginAccount">登录账号</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="loginAccount" autocomplete="off" placeholder="登录账号">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="resetPass">初始密码</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="resetPass" autocomplete="off" placeholder="初始密码">
+							</div>
+							<a class="addUser-form-resetPass">重置密码</a>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="useRole">用户角色</label>
+							<div class="col-sm-6">
+								<select class="selectpicker" id="useRole">
+									<option>财务总监</option>
+									<option>Ketchup</option>
+									<option>Barbecue</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="unit">证件类型</label>
+							<div class="col-sm-6">
+								<select class="selectpicker" id="unit">
+									<option>身份证</option>
+									<option>护照</option>
+									<option>Barbecue</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="idNum">证件号码</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="idNum" autocomplete="off" placeholder="证件号码">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="email">电子邮箱</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="email" autocomplete="off" placeholder="电子邮箱">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="phone">手机号码</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="phone" autocomplete="off" placeholder="手机号码">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="userSource">用户来源</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="userSource" autocomplete="off" placeholder="用户来源">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="userSource">状态</label>
+							<div class="col-sm-4">
+								<label class="radio-inline">
+									<input type="radio" name="using" id="inlineRadio1" value="option1"> 启用
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="using" id="inlineRadio2" value="option2"> 停用
+								</label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="col-sm-2 col-sm-offset-2">
+								<button type="button" class="btn btn-danger">保存</button>
+								<button type="button" class="btn btn-primary">返回</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="../../../../vendors/bootstrap/jquery.min.js"></script>
+		<script src="../../../../vendors/bootstrap/bootstrap.min.js"></script>
+		<script src="../../../../vendors/bootstrap-select/bootstrap-select.min.js"></script>
+	</body>
+
+</html>

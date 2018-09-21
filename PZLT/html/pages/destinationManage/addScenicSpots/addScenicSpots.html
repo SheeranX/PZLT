@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加景区</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../../../../vendors/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../../vendors/bootstrap-select/bootstrap-select.min.css">
+		<link rel="stylesheet" href="../../../../vendors/bootstrap/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../../vendors/bootstrap-fileinput/css/fileinput.min.css">
+    	<link rel="stylesheet" href="../../../../vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+		<link rel="stylesheet" href="../../../../styles/global.css">
+		<link rel="stylesheet" href="../../../../styles/pages/addScenicSpots.css" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="addScenicSpots">
+					<span class="addScenicSpots-title">
+						添加旅游景区
+					</span>
+			</div>
+			<form class="form-inline" action="">
+						<div class="form-group col-sm-6">
+							<label for="scenicFullName">景区全称:</label>
+							<input type="text" class="form-control" id="scenicFullName">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="salesTicketTime">售票时间:</label>
+							<div class="input-append date form_datetime">
+								<input type="text" class="form-control" id="salesTicketTime"value="" readonly>
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+							<span>-</span>
+							<div class="input-append date form_datetime">
+								<input type="text" class="form-control" id="salesTicketTime"value="" readonly>
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="abbreviation">景区简称:</label>
+							<input type="text" class="form-control" id="abbreviation">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="checkTime">检票时间:</label>
+							<div class="input-append date form_datetime">
+								<input type="text" class="form-control" id="checkTime" value="" readonly>
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+							<span>-</span>
+							<div class="input-append date form_datetime">
+								<input type="text" class="form-control" id="checkTime" value="" readonly>
+								<span class="add-on"><i class="icon-th"></i></span>
+							</div>
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="scenicSpoCode">景区代码:</label>
+							<input type="text" class="form-control" id="scenicSpoCode">
+						</div>
+						<div class="form-group col-sm-6">
+							<label for="limitedPeople">限定人数:</label>
+							<input type="text" class="form-control" id="limitedPeople">
+						</div>
+						<div class="form-group col-sm-12">
+							<label for="area">所在地区:</label>
+							<div id="area">
+								<select class="selectpicker" id="scenic">
+									<option>省</option>
+									<option>省</option>
+									<option>省</option>
+								</select>
+								<select class="selectpicker" id="scenic">
+									<option>市</option>
+									<option>市</option>
+									<option>市</option>
+								</select>
+								<select class="selectpicker" id="scenic">
+									<option>县</option>
+									<option>县</option>
+									<option>县</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group col-sm-12">
+							<label for="scenicAddress">景区地址:</label>
+							<input type="text" class="form-control" id="scenicAddress" placeholder="请输入具体地址">
+						</div>
+						<div class="form-group col-sm-12">
+							<label for="maxCarryCapacity">最大承载:</label>
+							<input type="text" class="form-control" id="maxCarryCapacity">
+						</div>
+						<div class="form-group col-sm-12">
+							<label for="qualityGrade">质量等级:</label>
+							<input type="text" class="form-control" id="qualityGrade">
+						</div>
+						<div class="form-group">
+							<label for="scenicTheme">景区主题:</label>
+							<select class="selectpicker" id="scenicTheme">
+								<option>旅行社</option>
+								<option>分销商</option>
+								<option>旅游景区</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="scenicFeatures">景区特色:</label>
+							<!-- 加载编辑器的容器 -->
+							<script id="container" name="content" type="text/plain">
+								请输入内容
+							</script>
+							<!-- 配置文件 -->
+							<script type="text/javascript" src="../../../../vendors/Ueditor/ueditor.config.js"></script>
+							<!-- 编辑器源码文件 -->
+							<script type="text/javascript" src="../../../../vendors/Ueditor/ueditor.all.js"></script>
+							<!-- 实例化编辑器 -->
+							<script type="text/javascript">
+								var ue = UE.getEditor('container');
+							</script>
+						</div>
+						<div class="form-group">
+							<label for="image">图片:</label>
+							<input type="file" class="form-control file-loading" id="input-id">
+						</div>
+						<div class="form-group col-sm-12 addScenicSpots-btn">
+							<div class="col-sm-10">
+								<button type="button" class="btn btn-danger">保存</button>
+								<button type="button" class="btn btn-primary">返回</button>
+							</div>
+						</div>
+			</form>	
+		</div>
+	</body>
+	<script src="../../../../vendors/bootstrap/jquery.min.js"></script>
+	<script src="../../../../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../../vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="../../../../scripts/components/upload.comon.js"></script>
+    <script src="../../../../scripts/components/datePicker.common.js"></script>
+    <script src="../../../../vendors/bootstrap-fileinput/js/plugins/piexif.min.js"></script>
+    <script src="../../../../vendors/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="../../../../vendors/bootstrap-fileinput/js/locales/zh.js"></script>
+	<script src="../../../../vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../../../vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../../../../scripts/pages/addScenicSpots.js"></script>
+</html>

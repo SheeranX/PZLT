@@ -1,0 +1,24 @@
+.userInfo-form{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+.userInfo-form-loginAccount{
+    margin-left: 20px;
+}
+.userInfo-addUserBtn{
+    float: right;
+    margin: 20px 20px;
+}
+.userInfo-table{
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 20px
+}
+.l-grid-row-cell-inner{
+    line-height: 28px
+}
+#moreForm{
+    background: #000;
+}

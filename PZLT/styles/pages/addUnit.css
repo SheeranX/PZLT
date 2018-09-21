@@ -1,0 +1,44 @@
+.container-box{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	min-width: 1200px;
+}
+label{
+	font-weight: 500;
+}
+.addUnit-unitInfo{
+	padding-bottom: 4px;
+	border-bottom: 1px solid #ccc;
+}
+.addUnit-unitInfo-title{
+	color: #FC8A3D;
+	padding-bottom: 5px;
+	margin-left: 10px;
+	border-bottom: 2px solid #FC8A3D;
+}
+.addUnit-baseInfo,.addUnit-contact,.account-contact{
+	height: 30px;
+	margin-top:20px;
+	background-color: #edf3ff;
+	/*overflow: hidden;*/
+	clear: both;
+}
+.addUnit-baseInfo-title,.addUnit-contact-title,.account-contact-title{
+	line-height: 30px;
+	font-weight: 700;
+	margin-left: 10px;
+}
+.addUnit-baseInfo-detail,.addUnit-contact-detail,.account-contact-detail{
+	margin-top: 20px;
+}
+.addUnit-btnStyle{
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 150px;
+}
+#container{
+	margin-top: 30px;
+	margin-left: 20px;
+}

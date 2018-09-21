@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../vendors/bootstrap/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../vendors/jQuery-Validation-Engine-2.6.2/css/validationEngine.jquery.css">
+    <title>添加编号</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-10">
+                <form action="#" class="form-horizontal" id="registerForm">
+                    <div class="form-group">
+                        <label for="seqName" class="col-sm-3 control-label">序列号名称：</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control validate[required]" id="username" name="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyVal" class="col-sm-3 control-label">键值：</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control validate[required]" id="keyVal" name="seqcode">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyVal" class="col-sm-3 control-label">是否清空序号：</label>
+                        <div class="col-sm-6">
+                          <input type="radio" name="hobby" value="sing" checked>唱歌
+                          <input type="radio" name="hobby" value="dance">跳舞
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyVal" class="col-sm-3 control-label">编号类型：</label>
+                        <div class="col-sm-6">
+                           <input type="checkbox" name="sport" value="run" class="validate[required]">跑步
+                           <input type="checkbox" name="sport2" value="swim" class="validate[required]">游泳
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyVal" class="col-sm-3 control-label">备注：</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="keyVal">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyVal" class="col-sm-3 control-label">获取最大sql</label>
+                        <div class="col-sm-6">
+                            <select class="validate[required]">
+                                <option value="s">ssss</option>
+                            </select>;
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyVal" class="col-sm-3 control-label"></label>
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary" type="button" id="save">保存</button>
+                            <a class="btn btn-warning" href="sequance.html" target="iframe">返回</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../../../vendors/bootstrap/jquery.min.js"></script>
+    <script src="../../../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../../../vendors/layer/layer.js"></script>
+    <script src="../../../vendors/jQuery-Validation-Engine-2.6.2/js/jquery.validationEngine-zh_CN.js"></script>
+    <script src="../../../vendors/jQuery-Validation-Engine-2.6.2/js/jquery.validationEngine.js"></script>
+    <script src="../../../scripts/components/toast.common.js"></script>
+    <script src="../../../scripts/components/http.common.js"></script>
+    <script src="../../../scripts/components/form.common.js"></script>
+    <script>
+    // //处理校验
+    $('#save').click(function(){
+        var isPassed =  form.formSubmit('registerForm','https://www.jb51.net/article/117491.htm',$(this));
+        console.log(isPassed);
+    });
+    </script>
+</body>
+
+</html>

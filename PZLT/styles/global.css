@@ -1,0 +1,437 @@
+/* 公共样式部分 */
+/*字体*/
+.font12{
+  font-size: 12px;
+}
+.font14{
+  font-size: 14px;
+}
+.font16{
+  font-size: 16px;
+}
+.font18{
+  font-size: 18px;
+}
+.font20{
+  font-size: 20px!important;
+}
+
+/*颜色*/
+.light-gray{
+  color: #ededed;
+}
+.bg-light-blue{
+  background: #edf3ff;
+}
+.bg-light-gray{
+  background: #ededed;
+}
+.bg-blue{
+  background: #4b89fc;
+}
+.bg-success{
+  background: #69ba6d;
+}
+.bg-danger{
+  background: #ec536c!important;
+}
+.bg-primary{
+  background: #4b89fc;
+}
+.bg-warning{
+  background: #fbb03b;
+}
+
+.bg-white{
+  background: #fff!important;
+}
+
+.white{
+  color: #fff;
+}
+.black{
+  color: #666;
+}
+.warning{
+  color: #fadb14;
+}
+.blue{
+  color: #4b89fc;
+}
+.form-inline .form-group{
+  padding:10px;
+  display: inline-block;
+}
+.form-inline .form-group .form-control{
+  width: 220px;
+}
+.form-horizontal .form-control{
+  width: 220px;
+}
+.form-horizontal textarea{
+  width: 100%!important;
+  min-width: 220px;
+}
+.table-container{
+  margin-top: 30px;
+}
+
+.long-label{
+  width: 150px;
+}
+
+.middle-label{
+  width: 95px;
+}
+.control-label{
+  text-align: right;
+  font-size: 14px;
+}
+
+.more .well {
+  padding: 0;
+}
+
+.getMore::after{
+  position: absolute;
+  width: 0;
+  content: '';
+  height: 0;
+  margin-left: 0px;
+  border-bottom: 10px solid #ededed;
+  border-top:10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  margin-top: 1px;
+  display: block;
+}
+
+label{
+  font-weight: 500
+}
+
+.space-padding{
+  padding: 0 30px;
+}
+
+/*bootstrap 样式覆写*/
+
+/*信息按钮*/
+.btn-primary {
+  color: #fff;
+  background-color: #4b89fc;
+  border-color: #3782fc;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #4075d6;
+  border-color: #4075d6;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #4075d6;
+  border-color: #4075d6;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #4075d6;
+  border-color: #4075d6;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #4075d6;
+  border-color: #4075d6;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.btn-primary .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+
+/*警告按钮*/
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-warning:focus,
+.btn-warning.focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+.btn-warning:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-warning:active:hover,
+.btn-warning.active:hover,
+.open > .dropdown-toggle.btn-warning:hover,
+.btn-warning:active:focus,
+.btn-warning.active:focus,
+.open > .dropdown-toggle.btn-warning:focus,
+.btn-warning:active.focus,
+.btn-warning.active.focus,
+.open > .dropdown-toggle.btn-warning.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open > .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled.focus,
+.btn-warning[disabled].focus,
+fieldset[disabled] .btn-warning.focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+
+/*错误按钮*/
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-danger:focus,
+.btn-danger.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.btn-danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.btn-danger:active:hover,
+.btn-danger.active:hover,
+.open > .dropdown-toggle.btn-danger:hover,
+.btn-danger:active:focus,
+.btn-danger.active:focus,
+.open > .dropdown-toggle.btn-danger:focus,
+.btn-danger:active.focus,
+.btn-danger.active.focus,
+.open > .dropdown-toggle.btn-danger.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled.focus,
+.btn-danger[disabled].focus,
+fieldset[disabled] .btn-danger.focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+
+/*成功按钮*/
+
+.btn-success {
+  color: #fff;
+  background-color: #69ba6d;
+  border-color: #57b15a;
+}
+.btn-success:focus,
+.btn-success.focus {
+  color: #fff;
+  background-color: #599e5d;
+  border-color: #57b15a;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #599e5d;
+  border-color: #57b15a;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #599e5d;
+  border-color: #57b15a;
+}
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open > .dropdown-toggle.btn-success:hover,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.open > .dropdown-toggle.btn-success:focus,
+.btn-success:active.focus,
+.btn-success.active.focus,
+.open > .dropdown-toggle.btn-success.focus {
+  color: #fff;
+  background-color: #599e5d;
+  border-color: #57b15a;
+}
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success[disabled].focus,
+fieldset[disabled] .btn-success.focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #599e5d;
+  border-color: #57b15a;
+}
+.btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+
+.select2-container .select2-selection--single{
+  height: 34px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered
+{
+  padding-right: 0px
+}
+.star{
+  color: red;
+  vertical-align: sub;
+}
+#comboSelect .select2-container{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0 -2px;
+}
+.select2-container .select2-selection--single .select2-selection__clear{
+  display: none;
+}
+.min-width{
+  min-width: 1000px;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 750px) {
+  .header-brand{
+      display: none;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  #getMore::after{
+      display: none;
+  }
+}
+
+hr{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.padding-top{
+  padding-top: 20px;
+}
+

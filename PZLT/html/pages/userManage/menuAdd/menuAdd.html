@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../../vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../vendors/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../../../vendors/bootstrap/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../styles/global.css">
+    <link rel="stylesheet" href="../../../../vendors/zTree_v3/zTreeStyle/zTreeStyle.css" />
+    <title>菜单添加</title>
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+        	<div class="col-md-4 col-sm-4 col-xs-4 ">
+        		<div class="panel panel-default">
+        			<div class="panel-heading">
+					    <h3 class="panel-title">权限列表</h3>
+					</div>
+				    <div class="panel-body">
+				        <div id="tree">
+			        		<ul id="treeDemo" class="ztree"></ul>
+			     		</div>
+				    </div>
+				</div>
+        	</div>
+            <div class="col-md-8 col-sm-8 col-xs-8 ">
+            	<div class="panel panel-default">
+				    <div class="panel-body">
+                		<form action="#" class="form-horizontal">
+                			<div class="col-md-8 col-sm-8 col-xs-8">
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限名称：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control" value="角色管理">
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限名称英文：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control" value="role manager">
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限名称其他语言：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control" value="角色管理">
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限编号：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control" value="A040102">
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">排序：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control" value="2">
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限模块层级：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control" value="3">
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限类别：</label>
+	                                <div class="col-md-4">
+	                                    <select class="selectpicker">
+	                                        <option>页面权限</option>
+	                                        <option>页面权限</option>
+	                                        <option>页面权限</option>
+	                                    </select>
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限功能类别：</label>
+	                                <div class="col-md-4">
+	                                    <select class="selectpicker">
+	                                        <option>普通权限</option>
+	                                        <option>普通权限</option>
+	                                        <option>普通权限</option>
+	                                    </select>
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">平台类型：</label>
+	                                <div class="col-md-4">
+	                                    <select class="selectpicker">
+	                                        <option>旅行社订票平台</option>
+	                                        <option>旅行社订票平台</option>
+	                                        <option>旅行社订票平台</option>
+	                                    </select>
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限URL：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control" >
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">图标文件包含路径：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control">
+	                                </div>
+	                            </div>
+	                            <div class="form-group">
+	                                <label for="seqName" class="control-label col-md-8">权限备注：</label>
+	                                <div class="col-md-4">
+	                                    <input type="text" class="form-control">
+	                                </div>
+	                            </div>
+		                    </div>
+                		</form>
+                		<div class="col-md-8 col-md-offset-4 col-sm-8 col-xs-8">
+		                    <button type="button" class="btn btn-danger">添加</button>
+		                  	<button type="button" class="btn btn-danger">修改</button>
+		                  	<button type="button" class="btn btn-danger">删除</button>
+		                </div>
+               		 </div>
+				</div>
+            </div>
+        </div>
+        
+        </div>
+        <script src="../../../../vendors/bootstrap/jquery.min.js"></script>
+        <script src="../../../../vendors/bootstrap/bootstrap.min.js"></script>
+        <script src="../../../../vendors/bootstrap-select/bootstrap-select.min.js"></script>
+        <script src="../../../../vendors/zTree_v3/js/jquery.ztree.all.min.js" ></script>
+        <script src="../../../../scripts/pages/menuAdd.js" ></script>
+</body>
+
+</html>

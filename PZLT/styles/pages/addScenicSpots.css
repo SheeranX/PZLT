@@ -1,0 +1,37 @@
+.addScenicSpots{
+	padding-bottom: 4px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.addScenicSpots-title{
+	color: #FC8A3D;
+	padding-bottom: 5px;
+	/*border-bottom: 2px solid #69ba6d;*/
+	border-bottom: 2px solid #FC8A3D;
+}
+#scenicFullName,#abbreviation,
+#scenicSpoCode,#maxCarryCapacity,
+#qualityGrade{
+	width: 300px;
+}
+#limitedPeople{
+	width: 313px;
+}
+#scenicAddress{
+	width: 670px;
+}
+button{
+	width: 100px;
+}
+#salesTicketTime,#checkTime{
+	width: 150px;
+}
+.form_datetime{
+	display: inline-block;
+}
+#area{
+	display: inline-block;
+}
+.addScenicSpots-btn{
+	text-align: center;
+}

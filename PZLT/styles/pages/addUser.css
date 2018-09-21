@@ -1,0 +1,9 @@
+.addUser-form{
+	/*margin-left: 20px;*/
+}
+.addUser-form-resetPass{
+	line-height: 34px;
+}
+label{
+	font-weight: 500;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/base.css?v=1.0">
+    <title>编号管理</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-8 col-xs-12">
+                <form id="queryForm" class="form-inline">
+                    <div class="form-group">
+                        <label for="sequenceName" class="control-label middle-label">序列号名称：</label>
+                        <input type="text" class="form-control" id="sequenceName" name="sequenceName">
+                    </div>
+                    <div class="form-group">
+                        <label for="sequenceType" class="control-label middle-label">编号类型：</label>
+                        <select  id="sequenceType" name="sequenceType">
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <a role="button" data-toggle="collapse" href="#collapse" id="getMore" aria-expanded="false"
+                           aria-controls="collapse">
+                            更多条件<span class="fa fa-angle-down font14"></span>
+                        </a>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label">
+                            <button type="button" id="myButton" onclick="resetSearch()" class="btn btn-primary" autocomplete="off">
+                                查询
+                            </button>
+                        </label>
+                    </div>
+                    <div class="collapse more" id="collapse">
+                        <div class="well">
+                            <div class="form-group">
+                                <label for="sequenceFlag" class="control-label middle-label">清空标志：</label>
+                                <select  id="sequenceFlag" name="sequenceFlag">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sequenceServerId" class="control-label middle-label">种子服务器：</label>
+                                <input type="text" class="form-control" id="sequenceServerId" name="sequenceServerId">
+                            </div>
+                            <div class="form-group">
+                                <label for="remark" class="control-label middle-label">备注：</label>
+                                <input type="text" class="form-control" id="remark" name="remark">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+      <div class="row">
+          <div class="clearfix">
+            <div class="pull-right">
+                <a class="btn btn-success" id="addSequence" href="/backstage/privateAuthority/sequenceAction/addSequencePage" target="mainframe">添加编号</a>
+                <a class="btn btn-success" href="/backstage/privateAuthority/sequenceAction/addSequenceServicePage" target="mainframe">增加服务器编号</a>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+         <div id="maingrid" style="margin-top: 10px;">
+      </div>
+    </div>
+    <script src="../../../scripts/baseBackEnd/base.js"></script>
+    <script type="text/javascript">
+        var g;
+        $(function(){
+              var columns = [
+              { display: '序列号名称', name: 'sequenceName', width: 400 },
+              { display: '键值', name: 'sequenceValue', width: 100,},
+              { display: '清空序号', name: 'sequenceFlag', width: 200,render: function (item){
+                        return CodeUtils.formatCode("COMMON_YES_OR_NO_FLAG",item.sequenceFlag);
+                  }
+              },
+              { display: '编号类型', name: 'sequenceType', width: 200,render: function (item){
+                      return CodeUtils.formatCode("SEQUENCE_TYPE",item.sequenceType);
+                  }
+              },
+              { display: '种子服务器', name: 'sequenceServerId', width: 200},
+              { display: '备注', name: 'remark', width: 200 },
+              {display: '修改用户', name: 'updatedUser', width: 150},
+              {display: '修改时间', name: 'updatedDate', width: 180,render: function (item){
+                  return formatDate.newDate(item['updatedDate'],1);
+              }},
+              { display: '操作', name: '',
+                  render: function (item, record, rowindex, value, column) {
+                      var str = "";
+                          str += '<a href="/backstage/privateAuthority/sequenceAction/updateSequencePage?sequenceId=' + item.sequenceId + '" class="handle-blue" style="margin-right:5px">修改</a>';
+                          str += '<a href="javascript:void(0)"  onclick="itemClickDelete(' + item.sequenceId + ')" class="handle-red">删除</a>';
+                      return str;
+                  }}
+              ];
+            var url = '/backstage/privateAuthority/sequenceAction/findSequenceList';
+            g = table.initTable(url,'maingrid',columns);
+          });
+        //删除
+        function itemClickDelete(sequenceId) {
+            deleteObj(sequenceId,'queryForm',g,'/backstage/privateAuthority/sequenceAction/deleteSequence');
+        }
+
+        $('#getMore').click(function(e){
+            $(this).toggleClass('getMore').find('span').toggleClass('fa-angle-up').toggleClass('fa-angle-down');
+        });
+
+        //编号类型
+        SelectUtils.init({
+            codeName:"SEQUENCE_TYPE",// codeName
+            domId:"sequenceType",// 元素节点ID
+            codeKey:'codeKey', // 提交后台的数据
+            codeValue:'codeValue', // 显示页面的数据
+            selectedKey:'', // 选中值
+            type:'2'// 1：请选择，2：全部
+        });
+
+        //是否清空序号
+        SelectUtils.init({
+            codeName:"COMMON_YES_OR_NO_FLAG",// codeName
+            domId:"sequenceFlag",// 元素节点ID
+            codeKey:'codeKey', // 提交后台的数据
+            codeValue:'codeValue', // 显示页面的数据
+            selectedKey:'', // 选中值
+            type:'2'// 1：请选择，2：全部
+        });
+    </script>
+</body>
+</html>

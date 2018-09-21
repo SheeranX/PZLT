@@ -1,0 +1,16 @@
+/*插件样式*/
+@import url('../vendors/bootstrap/bootstrap.min.css');
+@import url('../vendors/bootstrap/build.css');
+@import url('../vendors/bootstrap-select/bootstrap-select.min.css');
+@import url('../vendors/bootstrap-select/select2-bootstrap.min.css');
+@import url('../vendors/select2/dist/css/select2.min.css');
+@import url('../vendors/bootstrap/font-awesome.min.css');
+@import url('../vendors/ligerUI/skins/Aqua/css/ligerui-all.css');
+@import url('../vendors/ligerUI/skins/Gray2014/css/all.css');
+@import url('../vendors/bootstrap-fileinput/css/fileinput.min.css');
+@import url('../vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css');
+
+/*自定义样式*/
+@import url('../styles/global.css');
+@import url('../styles/pages/index.css');
+@import url('../styles/pages/login.css');
